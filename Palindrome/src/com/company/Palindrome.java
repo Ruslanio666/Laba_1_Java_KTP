@@ -2,6 +2,7 @@ package com.company;
 
 public class Palindrome {
 
+    // Проверяем каждое слово на палиндромность ыводим результаты
     public static void main(String[] args) {
         for (int i = 0; i < args.length; i++) {
             String s = args[i];
@@ -13,6 +14,7 @@ public class Palindrome {
         };
     }
 
+    // Переворачиваем слово
     public static String reverseString (String str){
         String s = "";
         for (int i = 0; i < str.length(); i++) {
@@ -22,6 +24,7 @@ public class Palindrome {
         }
         return s;
     }
+    // Проверяем является ли слово палиндромом
     public static boolean isPalindrome(String s){
         return s.equals(reverseString(s));
     }
